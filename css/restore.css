@@ -1,0 +1,281 @@
+/**
+ * Tabs ===============================================================
+ */
+div.tabs ul.tabs li {
+  float:left;
+  padding-right:1px;
+  padding-bottom:0px;
+}
+
+div.tabs ul.primary {
+  padding:0px;
+  /*float:right;*/
+  margin:5px 5px 0px 0px;
+  border:none;
+}
+
+div.tabs ul.primary li a {
+  text-transform:uppercase;
+  margin:0px;
+  color:#fff;
+  background:#aaa;
+  font-weight:bold;
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+  -webkit-border-top-left-radius:5px;
+  -webkit-border-top-right-radius:5px;
+}
+
+div.tabs ul.tabs li a,
+div.tabs ul.tabs li a:hover,
+div.tabs ul.tabs li.active a,
+div.tabs ul.tabs li.active a.active {
+  float:left;
+  padding:6px 15px;
+  font-size:.95em;
+}
+
+div.tabs ul.tabs li a:hover { 
+  background:#bbb;
+}
+div.tabs ul.primary li.active a,
+div.tabs ul.primary li.active a.active { 
+  background:#f1f1f1; 
+  margin:0px;
+  border-bottom:none; 
+  color:#333;
+}
+
+div.tabs ul.secondary {
+  float:none;
+  clear:both;
+  font-size:1.05em;
+  padding:12px;
+  line-height:20px;
+  overflow:hidden;
+  border:1px solid #DDDDDD;
+  background:#fff url(../images/grad.jpg) repeat-x 0px 0px;
+  margin:0px;
+}
+div.help {
+  margin:0px;
+  border-left:1px solid #bbb;
+  border-right:1px solid #bbb;
+  padding:20px;
+}
+
+div.tabs ul.secondary li { 
+  border:none; 
+  padding:0px 8px 0px 2px 
+}
+div.tabs ul.secondary li a { 
+  color:#05a;
+}
+
+div.tabs ul.secondary li a,
+div.tabs ul.secondary li a:hover,
+div.tabs ul.secondary li.active a,
+div.tabs ul.secondary li.active a.active {
+  padding:5px 15px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  font-weight:bold;
+}
+
+div.tabs ul.secondary li.active a,
+div.tabs ul.secondary li.active a.active {
+  color:#fff;
+  background:#666;
+  border-bottom:0px;
+}
+
+/* Overriding Drupal theme forms for editing content */
+form#node-form,
+form#user-login,
+form#user-register,
+form#user-pass,
+form#user-profile-form,
+form#block-admin-display-form,
+form#comment-form,
+form#comment-confirm-delete,
+form#user-login-form  {
+  border:1px solid #ddd;
+  padding:20px;
+  margin:0px 0px 10px;
+  background:#fff url(../images/grad.jpg) repeat-x 0px -60px;
+  margin-top:-1px
+}
+form#node-form label,
+form#user-login label,
+form#user-register label,
+form#user-pass label,
+form#user-profile-form label,
+form#block-admin-display-form label,
+form#comment-form label,
+form#comment-confirm-delete label,
+form#user-login-form label {
+  font-size:1.1em;
+  line-height:2.5em;
+  font-weight:bold;
+}
+form#node-form .description,
+form#user-login .description,
+form#user-register .description,
+form#user-pass .description,
+form#user-profile-form .description,
+form#block-admin-display-form .description,
+form#comment-form .description,
+form#comment-confirm-delete .description {
+  font-size:0.9em;
+  line-height:1.5em;
+  margin:8px 0px;
+}
+form#node-form #edit-submit,
+form#user-login #edit-submit,
+form#user-register #edit-submit,
+form#user-pass #edit-submit,
+form#user-profile-form #edit-submit,
+form#block-admin-display-form #edit-submit,
+form#comment-form #edit-submit,
+form#comment-confirm-delete #edit-submit,
+form#node-form #edit-preview,
+form#user-login #edit-preview,
+form#user-register #edit-preview,
+form#user-pass #edit-preview,
+form#user-profile-form #edit-preview,
+form#block-admin-display-form #edit-preview,
+form#comment-form #edit-preview,
+form#comment-confirm-delete #edit-preview,
+form#user-login-form #edit-preview,
+form#user-login-form #edit-submit {
+  height:30px;
+  margin-top:10px;
+  cursor:pointer;
+  background:#fff url(../images/grad.jpg) repeat-x 0px -60px;
+  border:1px solid #aaa;
+}
+form#node-form #edit-delete,
+form#user-login #edit-delete,
+form#user-register #edit-delete,
+form#user-pass #edit-delete,
+form#user-profile-form #edit-delete,
+form#block-admin-display-form #edit-delete,
+form#comment-form #edit-delete,
+form#comment-confirm-delete #edit-delete {
+  height:30px;
+  margin-top:10px;
+  cursor:pointer;
+  background:#fff url(../images/grad.jpg) repeat-x 0px -60px;
+  color:#aaa;
+  border: 1px solid #CCCCCC;
+}
+
+ul.tips {
+	padding: 0px 0px 10px 20px;
+}
+form legend {
+  border-bottom: 1px solid #CCCCCC;
+  display: block;
+  font-size: 1.5em;
+  font-weight:bold;
+  line-height: 2em;
+  margin-bottom: 8px;
+  width: 100%;
+}
+form fieldset {
+	padding:10px 0px;
+}
+html.js div.fieldset,
+html.js div.fieldset.collapsed {
+  border:1px solid #ccc;
+  padding:9px;
+  margin:0px 0px 10px;
+  background:#f8f8f8;
+}
+  
+form#node-form div#edit-body-wrapper,
+form#node-form div#edit-title-wrapper {
+  padding:0px 0px 10px;
+  margin:0px 0px 10px;
+}
+
+html.js div.fieldset div.fieldset { 
+  background:#fff;
+}
+html.js div.fieldset div.fieldset div.fieldset {
+  background:#f8f8f8;
+}
+
+html.js div.fieldset.collapsed div.fieldset-wrapper {
+  display:none;
+}
+
+html.js div.fieldset h2,
+html.js div.fieldset.collapsed h2,
+html.js div.fieldset.collapsible h2 {
+  display:block;
+  font-family:"Lucida Grande",Verdana,sans-serif;
+  font-weight:normal;
+}
+
+html.js div.fieldset h2, 
+form#node-form div.form-item label {
+  font-size:11px;
+  font-weight:normal;
+  margin:0;
+  padding:0;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+form#node-form div.form-item label {
+  padding:4px 0px 6px;
+}
+
+html.js div.fieldset.collapsed h2 a,
+html.js div.fieldset.collapsible h2 a {
+  color:#0055AA;
+  text-decoration:none;
+  padding-left:0px;
+  background:transparent;
+}
+
+html.js div.fieldset.collapsible div.fieldset-wrapper {
+  padding-top:22px;
+}
+
+form#node-form a#switch_oFCK_1,
+form#node-form .textarea-identifier {
+  display:block;
+  padding-bottom:10px;
+}
+form#node-form div.fieldset ul.tips {
+  padding-left:2em;
+} 
+form#user-profile-form div.fieldset div#edit-name-wrapper {
+  padding-top:12px;
+}
+table#blocks {
+  width:100%;
+}
+table#blocks td {
+  padding:6px;
+}
+
+td {
+  vertical-align:top;
+  padding:5px;
+}
+table#blocks tr.even {
+  background:#f6f6f6;
+}
+table#blocks tr.draggable {
+  border:1px solid #ddd;
+}
+table#blocks thead th {
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
+div.help {
+  display:none;
+}
